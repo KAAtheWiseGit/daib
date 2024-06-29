@@ -1,0 +1,133 @@
+{% presentation speaker notes %}
+
+# SafeMoon
+
+## SafeMoon infrastructure
+
+SafeMoon was a cryptocurrency built on top of the BNB token and the
+Ethereum blockchain.  It burnt 5% of the value of each transaction as a
+deflationary mechanism and took a 5% tax from each contract to supply
+the liquidity pool.
+
+
+## Liquidity pool
+
+A liquidity pool is the main communication point between a coin and the
+outside world.  In this case, SafeMoon was supposed to be primarily
+traded via BNB.  As such, it's necessary that it stays supplied with
+liquidity, as it keeps the prices stable.
+
+
+## Embezzlement
+
+This one isn't that nuanced, but it shines the light on the general
+attitudes present at SafeMoon, the company.
+
+The reckless stealing was uncovered and caused backlash, after which
+the CEO was dismissed.  To address the controversy, SafeMoon developed a
+second version of the token, slightly more secure against this kind of
+attack.  However, during the migration the CEO used a subtle form of
+arbitrage.  The migration was supposed to move SafeMoon and it's
+liquidity counterpart BNB from the V1 pool to the V2 pool.
+
+
+## Market manipulation
+
+Here $`M^s` and $`M^b` can be presumed to be less than $`L_2^s` and
+$`L_2^b` for the majority of the transactions, carried out by the new
+CEO.
+
+
+## Manipulation profit and losses
+
+Price similarity was upheld by arbitrage, as any significant (higher
+than the v1 to v2 transfer fees) could be used to trade for guaranteed
+profit.  Notably, the CEO essentially created such arbitrage opportunity
+for himself.
+
+
+## Factors
+
+In both cases, the losses were caused by the lack of automatic control
+or human oversight over the liquidity pool.  The second case was more
+sophistical, as it relied on market arbitrage, which is harder to spot
+with a naked eye compared to plain withdrawals.
+
+On the second point, because the company's employees or the community
+didn't have clear understanding of how the migration was supposed to
+work, almost none of them managed to stop the CEO.
+
+
+## Alleviation strategies
+
+: Signal amplification mechanisms.
+
+  Despite the initial fraud being documented on the blockchain, it
+  wasn't called out until several months later.  One of the
+  "Information"-level findings in the audit was [lack of event
+  emitting][event] for major state changes.  Had those been present,
+  some services might've tracked those and made the withdrawals more
+  visible.
+
+: Clear economic guidelines
+
+  A lot of firms, even the more strictly regulated ones, don't have a
+  strict policy for market-involving actions.  Any form of liquidity
+  transfer, paper trading (including stock buybacks), and other
+  financial operations, must be highlighted.  And, furthermore, it's
+  expected effects must be clearly outlined, so that they can be
+  compared to the actual results.  Without those measures it's much
+  harder to prove that an such an action, which caused financial loss,
+  was nefarious.
+
+
+## Sources
+
+- [An official audit][audit]
+- Kyle's wallet address: `0xC95063D946242F26074A76C8A2E94C9D735DFC78`.
+
+- [Currency prize](https://coinmarketcap.com/currencies/safemoon-v2/),
+  shows spikes during the second case of market manipulation.
+
+- [SEC charges press release][sec], has a link to [the PDF][sec-pdf]
+
+
+[event]: https://skynet.certik.com/projects/safemoon?auditId=SafeMoon&findingId=SSB-08#code-security
+[sec]: https://www.sec.gov/news/press-release/2023-229
+[sec-pdf]: https://www.sec.gov/files/litigation/complaints/2023/comp-pr2023-229.pdf
+[audit]: https://skynet.certik.com/projects/safemoon
+
+
+# Tether
+
+## Tether/Bitfinex
+
+Tether and Bitfinex were illegally commingling funds and lied about
+their ownership, which will become important later.
+
+
+## Banking issues
+
+The Crypto Capital insolvency caused Bitfinex to lose more than $800
+million, which Tether had to plug in later on.
+
+
+## Insolvency
+
+The attestation was required due to a broader investor anxiety in the
+cryptocurrency space at the time.
+
+
+## Factors
+
+While Tether had other reasons to reject the audits, it ultimately
+exposed them to risks which weren't caused by their own criminal
+conduct.  This exact fact is the focus of this presentation, not the
+broader crimes.
+
+
+## Alleviation strategies
+
+In fact, given Tether also functioned like a bank and gave out loans,
+they didn't even have their collateral at 100% at any given point in
+time, making them even more vulnerable to a liquidity crunch.
